@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="715.0" prefWidth="607.0" spacing="10.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InvoiceController">
+   <children>
+      <Label fx:id="titleLabel" text="HÓA ĐƠN">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderIdLabel" style="-fx-font-size: 14px;" text="Mã đơn hàng: " />
+      <Label fx:id="dateLabel" style="-fx-font-size: 14px;" text="Ngày thanh toán: " />
+      <Label fx:id="paymentMethodLabel" style="-fx-font-size: 14px;" text="Phương thức thanh toán: " />
+      <Label fx:id="customerNameLabel" style="-fx-font-size: 14px;" text="Khách hàng: " />
+      <Label style="-fx-font-size: 14px;" text="----------------------------------------" />
+      <VBox fx:id="itemsVBox" alignment="CENTER" spacing="5.0" />
+      <Label style="-fx-font-size: 14px;" text="----------------------------------------" />
+      <Label fx:id="totalLabel" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="TỔNG TIỀN: " />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

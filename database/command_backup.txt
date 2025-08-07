@@ -1,0 +1,14 @@
+mysqldump -u root -p --databases fastfood_database > "D:\Do_An_Cuoi_Ki\src\database\backup_fastfood_database.sql"
+
+----
+Port 3307:
+fastfood_database: Tên database
+-P 3307: mở port 3307
+"D:\Do_An_Cuoi_Ki\src\database\backup_fastfood_database.sql": Nơi lưu trữ SQL
+
+----
+
+mysqldump -u root -p -P 3307 --databases fastfood_database > "D:\Do_An_Cuoi_Ki\src\database\backup_fastfood_database.sql"
+
+mysqldump -u root -p -P 3307 --databases fastfood_database > "C:\Users\PC\Downloads\Do_An_Cuoi_Ki\src\database\backup_fastfood_database.sql"
+C:\Users\PC\Downloads\Do_An_Cuoi_Ki\src\database

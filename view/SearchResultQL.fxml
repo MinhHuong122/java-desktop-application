@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controller.SearchResultQLController" prefHeight="500.0" prefWidth="600.0">
+    <Label fx:id="titleLabel" alignment="CENTER" prefHeight="26.0" prefWidth="600.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Kết quả tìm kiếm (Quản lý)" textAlignment="CENTER" />
+    <ScrollPane fx:id="scrollPane" prefHeight="474.0" prefWidth="600.0">
+        <content>
+            <VBox fx:id="resultBox" spacing="10">
+                <!-- Sản phẩm -->
+                <Label text="Sản phẩm" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+                <TableView fx:id="productTable" prefHeight="150.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="productIdColumn" prefWidth="100.0" text="Mã sản phẩm" />
+                        <TableColumn fx:id="productNameColumn" prefWidth="200.0" text="Tên sản phẩm" />
+                        <TableColumn fx:id="productPriceColumn" prefWidth="100.0" text="Giá" />
+                        <TableColumn fx:id="productQuantityColumn" prefWidth="100.0" text="Số lượng" />
+                        <TableColumn fx:id="productFeaturedColumn" prefWidth="100.0" text="Nổi bật" />
+                    </columns>
+                </TableView>
+
+                <!-- Đơn hàng -->
+                <Label text="Đơn hàng" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+                <TableView fx:id="orderTable" prefHeight="150.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="orderIdColumn" prefWidth="150.0" text="Mã đơn hàng" />
+                        <TableColumn fx:id="orderUserIdColumn" prefWidth="100.0" text="Mã khách hàng" />
+                        <TableColumn fx:id="orderTotalColumn" prefWidth="100.0" text="Tổng tiền" />
+                        <TableColumn fx:id="orderTimeColumn" prefWidth="150.0" text="Thời gian" />
+                        <TableColumn fx:id="orderPaymentColumn" prefWidth="100.0" text="Phương thức" />
+                    </columns>
+                </TableView>
+
+                <!-- Khách hàng -->
+                <Label text="Khách hàng" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+                <TableView fx:id="userTable" prefHeight="150.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="userIdColumn" prefWidth="100.0" text="Mã khách hàng" />
+                        <TableColumn fx:id="userEmailColumn" prefWidth="200.0" text="Email" />
+                        <TableColumn fx:id="userPointsColumn" prefWidth="100.0" text="Điểm" />
+                        <TableColumn fx:id="userUpdateDateColumn" prefWidth="200.0" text="Ngày cập nhật" />
+                    </columns>
+                </TableView>
+            </VBox>
+        </content>
+    </ScrollPane>
+</VBox>

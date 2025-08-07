@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="BOTTOM_CENTER" layoutX="457.0" layoutY="153.0" prefHeight="713.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="111.0" prefWidth="1100.0" style="-fx-background-color: #dcdcdc;">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/51f8723a182f4ea2c1173b058f54d03f.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+
+            <HBox alignment="CENTER" prefHeight="432.0" prefWidth="1100.0">
+               <children>
+                  <Label prefHeight="234.0" prefWidth="774.0" text="Kính gửi Quý khách,Chúng tôi xin chân thành cảm ơn Quý khách đã tin tưởng và sử dụng ứng dụng của chúng tôi. Sự ủng hộ và đồng hành của Quý khách chính là động lực lớn nhất để chúng tôi không ngừng cải thiện, mang đến những trải nghiệm tốt hơn mỗi ngày.Chúng tôi luôn lắng nghe mọi ý kiến đóng góp từ Quý khách để hoàn thiện ứng dụng, nâng cao chất lượng dịch vụ và mang đến nhiều tính năng hữu ích hơn. Hy vọng rằng ứng dụng sẽ tiếp tục là người bạn đồng hành đáng tin cậy, giúp Quý khách có được những trải nghiệm tiện lợi và hiệu quả nhất." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/313af6708959eeb4664907a0a83eb926.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="41.0" prefWidth="1100.0">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="34.0" prefWidth="1100.0">
+                     <children>
+                        <Label text="\@Copyright by Totoro" />
+                        <Label text="Phiên bản 1.0.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

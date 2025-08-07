@@ -1,0 +1,38 @@
+.topArea {
+    -fx-padding: 30px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 0 0 1px 0;
+    -fx-background-color: #ddd;
+    -fx-background-radius: 8px;
+}
+
+.leftArea {
+    -fx-padding: 8px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 0 1px 0 0;
+    -fx-background-color: #fff;
+}
+
+
+.btnDangKy {
+    -fx-padding: 11px 16px;
+    -fx-text-fill:#444444;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: #99CCFF;
+    -fx-background-radius: 8px;
+}
+
+.btnDangNhap {
+    -fx-padding: 11px 16px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: #009999;
+    -fx-background-radius: 8px;
+}
+
+.btn:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.9;
+}

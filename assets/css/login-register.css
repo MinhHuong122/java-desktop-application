@@ -1,0 +1,46 @@
+.input {
+    -fx-padding: 8px;
+    -fx-border-radius: 7px;
+    -fx-text-fill: #020202;
+    -fx-background-color: transparent;
+    -fx-border-color: #403d3f;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-width: 1px;
+}
+
+.label-hidden {
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-opacity: 0;
+}
+
+.label-visible {
+    -fx-max-height: 100;
+    -fx-max-width: 100;
+    -fx-opacity: 1;
+}
+
+.input:focused {
+    -fx-border-color: #FEBE76;
+    -fx-border-width: 2px;
+}
+
+.registerBtn, .loginBtn {
+    -fx-padding: 8px 12px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: #009999;
+    -fx-background-radius: 8px;
+}
+
+.registerBtn:hover, .loginBtn:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.9;
+}
+
+.redirect {
+    -fx-text-fill: #7db3ff;
+    -fx-font-size: 14px;
+}

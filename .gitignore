@@ -1,0 +1,105 @@
+# ===============================
+# Java - Standard Git Ignore
+# ===============================
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# ===============================
+# IntelliJ IDEA
+# ===============================
+
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ===============================
+# Eclipse
+# ===============================
+
+.project
+.classpath
+.cproject
+.settings/
+bin/
+tmp/
+*.tmp
+
+# ===============================
+# NetBeans
+# ===============================
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbi/
+nbdist/
+.nb-gradle/
+
+# ===============================
+# Gradle / Maven
+# ===============================
+
+.gradle/
+build/
+target/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Wrapper logs
+gradle-app.setting
+gradle-wrapper.properties
+
+# ===============================
+# OS Generated
+# ===============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===============================
+# VS Code / Others
+# ===============================
+
+.vscode/
+*.swp
+*.swo
+
+# ===============================
+# Custom - Java Project Folders
+# ===============================
+
+/src/assets/temp/
+/src/assets/*.tmp
+/src/database/temp/
+/*.log

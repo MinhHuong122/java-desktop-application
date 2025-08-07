@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatisticalController">
+   <children>
+      <VBox layoutX="598.0" layoutY="110.0" prefHeight="714.0" prefWidth="1096.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="1096.0" style="-fx-background-color: #dcdcdc;">
+               <children>
+                  <Label text="Thống kê">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="44.0" prefWidth="1076.0" spacing="20.0">
+               <children>
+                  <Label text="Thời gian : " />
+                  <ComboBox fx:id="timeComboBox" prefWidth="150.0" />
+                  <Label text="Phương thức thanh toán" />
+                  <ComboBox fx:id="paymentComboBox" prefWidth="150.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="orderTable" prefHeight="532.0" prefWidth="1096.0">
+              <columns>
+                <TableColumn fx:id="orderIdColumn" prefWidth="200.0" text="Mã đơn hàng" />
+                <TableColumn fx:id="userIdColumn" maxWidth="1.7976931348623157E308" prefWidth="150.0" text="Mã khách hàng" />
+                <TableColumn fx:id="paymentMethodColumn" prefWidth="250.0" text="Phương thức thanh toán" />
+                <TableColumn fx:id="timeColumn" prefWidth="225.0" text="Thời gian" />
+                <TableColumn fx:id="totalColumn" prefWidth="150.0" text="Tiền thanh toán" />
+                <TableColumn fx:id="statusColumn" prefWidth="120.0" text="Tình trạng" />
+                <TableColumn fx:id="actionColumn" prefWidth="100.0" text="Hành động" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="1096.0" spacing="20.0">
+               <children>
+                  <Label fx:id="totalLabel1" layoutX="997.0" layoutY="32.0" text="Tổng doanh thu:">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalLabel" text="0 VND">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets right="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

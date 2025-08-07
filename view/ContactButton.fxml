@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" layoutX="-2.0" prefHeight="50.0" prefWidth="1102.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label text="Liên hệ hỗ trợ">
+               <font>
+                  <Font name="Cambria Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Circle fill="WHITE" layoutX="105.0" layoutY="166.0" radius="80.0" stroke="#0088ff" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="668.0" layoutY="619.0" radius="80.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="329.0" layoutY="250.0" radius="80.0" stroke="#0722fa" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="556.0" layoutY="397.0" radius="80.0" stroke="RED" strokeType="INSIDE" />
+      <Label layoutX="81.0" layoutY="101.0" prefHeight="32.0" prefWidth="43.0" text="Zalo">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="208.0" prefHeight="32.0" prefWidth="99.0" text="Facebook">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="633.0" layoutY="565.0" prefHeight="32.0" prefWidth="66.0" text="TikTok">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="528.0" layoutY="346.0" prefHeight="32.0" prefWidth="78.0" text="Gmail">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label ellipsisString="" layoutX="708.0" layoutY="61.0" prefHeight="243.0" prefWidth="344.0" text=" Quý khách vui lòng liên hệ với chúng tôi qua các phương thức bên để được hỗ trợ nhanh chóng" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Corbel" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

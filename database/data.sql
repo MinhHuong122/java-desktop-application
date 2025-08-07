@@ -1,0 +1,1 @@
+SELECT * FROM fastfood_database.san_pham;

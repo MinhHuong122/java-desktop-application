@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.StackPane?>
+
+<ScrollPane fx:id="mainScrollPane" prefHeight="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <content>
+      <StackPane fx:id="centerStackPane">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="4800.0" minWidth="-Infinity" stylesheets="@../assets/css/HomeButton.css">
+         <children>
+            <VBox alignment="TOP_CENTER" prefWidth="833.0" spacing="20.0" style="-fx-background-color: #FFFFFF;" minHeight="4800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <!-- Header -->
+                  <HBox alignment="CENTER" prefHeight="142.0" prefWidth="1102.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="72.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/2d16ecd58a1b744043ebebf1d1d5852e.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="69.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/0edee03d5f84443afbdd076506f184a0.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+
+                  <!-- Tiêu đề sản phẩm nổi bật -->
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="1102.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <Label text="Sản phẩm nổi bật">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+
+                  <!-- Sản phẩm nổi bật -->
+                  <HBox alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" fx:id="featuredHBox" >
+                     <children>
+                        
+                     </children>
+                  </HBox>
+
+                  <!-- Xem thêm -->
+                  <HBox alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="1102.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="39.0" prefWidth="183.0">
+                           <children>
+                              <Hyperlink onAction="#handleViewMore" text="Xem thêm . .">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+
+                  <!-- Danh mục -->
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="categoryLabel" text="Danh mục :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="239.0" prefWidth="1102.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="198.0" prefWidth="225.0" spacing="30.0">
+                           <children>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToSnack" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Snack">
+                                 <font>
+                                    <Font name="Cambria Italic" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/snack.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToCandy" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Kẹo">
+                                 <font>
+                                    <Font name="Cambria Italic" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/snack%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="198.0" prefWidth="225.0" spacing="30.0">
+                           <children>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToRicepaper" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Bánh tráng ">
+                                 <font>
+                                    <Font name="Cambria Italic" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/snack%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToJam" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Mứt">
+                                 <font>
+                                    <Font name="Cambria Italic" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/crisps.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="198.0" prefWidth="225.0" spacing="30.0">
+                           <children>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToCake" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Bánh ngọt">
+                                 <font>
+                                    <Font name="Cambria Italic" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/cupcake.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToChocolate" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Chocolate">
+                                 <font>
+                                    <Font name="Cambria Italic" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/chocolate.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="198.0" prefWidth="225.0" spacing="30.0">
+                           <children>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToDry" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Khô">
+                                 <font>
+                                    <Font name="Cambria Italic" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/dried-fruit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToDrink" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Nước ngọt">
+                                 <font>
+                                    <Font name="Cambria Italic" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/soft-drink.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="198.0" prefWidth="225.0" spacing="30.0">
+                           <children>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToCream" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Kem">
+                                 <font>
+                                    <Font name="Cambria Italic" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/berry.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleScrollToOther" prefHeight="103.0" prefWidth="102.0" styleClass="show-catalogue" text="Khác">
+                                 <font>
+                                    <Font name="Cambria Italic" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/vending-machine.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+
+                  <!-- Các danh mục sản phẩm -->
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="snackLabel" text="Snack :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="snackHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="candyLabel" text="Kẹo :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="candyHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ricepaperLabel" text="Bánh tráng :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="ricepaperHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="jamLabel" text="Mứt : ">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="jamHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="cakeLabel" text="Bánh ngọt :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="cakeHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="chocolateLabel" text="Chocolate">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="chocolateHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="dryLabel" text="Khô :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="dryHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="drinkLabel" text="Nước ngọt :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="drinkHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="creamLabel" text="Kem :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="creamHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="834.0" spacing="20.0" style="-fx-background-color: #D9CFAC;">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/92002c320647a903f95f78622af88902.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ortherLabel" text="Khác :">
+                           <font>
+                              <Font name="Cambria" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="ortherHBox" alignment="CENTER" prefHeight="262.0" prefWidth="1110.0" spacing="50.0" style="-fx-padding: 20PX;" />
+
+                  <!-- Footer -->
+                  <HBox alignment="CENTER" prefHeight="285.0" prefWidth="1102.0" style="-fx-background-color: #EEEEEE;">
+                     <children>
+                        <VBox prefHeight="286.0" prefWidth="633.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="582.0">
+                                 <children>
+                                    <Label text="Về TOTORO">
+                                       <font>
+                                          <Font name="Cambria Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="34.0" prefWidth="582.0">
+                                 <children>
+                                    <Label contentDisplay="TOP" text="Đã được chứng nhận an toàn thực phẩm" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="71.0" prefWidth="582.0">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/chungnhan.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="76.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/uytin.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="44.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/img/chungnhan2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="601.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="644.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="26.0" prefWidth="634.0">
+                                             <children>
+                                                <Label text="Địa chỉ : 736 Nguyễn Trãi Phường 11 Quận 5 TP. HCM - Tổng đài liên hệ : 123456789 - Email :  totoro@gamil.com " />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="28.0" prefWidth="634.0">
+                                             <children>
+                                                <Label text="Chịu Trách Nhiệm Quản Lý Nội Dung: Đỗ Nguyễn MInh Hương" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label text="© 2015 - Bản quyền thuộc về Công ty TNHH Totoro" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </AnchorPane>
+      </StackPane>
+   </content>
+</ScrollPane>

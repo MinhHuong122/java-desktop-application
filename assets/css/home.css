@@ -1,0 +1,50 @@
+.account-name {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.item {
+    -fx-spacing: 10px;
+    -fx-background-radius: 8px;
+}
+
+.item:hover {
+    -fx-background-color: #ddd;
+    -fx-cursor: hand;
+}
+
+.item:hover .item-label {
+    -fx-font-weight: bold;
+}
+
+.item:pressed {
+    -fx-background-color: #ccc;
+}
+
+.item:active {
+    -fx-background-color: red;
+}
+
+.item-label {
+    -fx-font-size: 14px;
+    -fx-fill: #000;
+}
+
+.userButton {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: #FFFFFF
+
+}
+.circular-image {
+    -fx-background-radius: 50%;
+    -fx-shape: "M50,25 A25,25 0 1,1 49.99,25 Z";
+
+}
+
+.tab-right 
+{
+    -fx-border-style: solid;
+
+}

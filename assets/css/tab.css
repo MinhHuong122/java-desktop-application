@@ -1,0 +1,59 @@
+.dialog-pane {
+    -fx-background-color: #ffffff; /* Màu nền trắng */
+    -fx-border-radius: 12px;
+    -fx-padding: 15px;
+    -fx-border-color: #e0e0e0; /* Đường viền nhạt */
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+}
+
+.dialog-pane .label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #222; /* Màu chữ đậm hơn */
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #dcdcdc;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-background-color: #f9f9f9;
+}
+
+.text-field:focused {
+    -fx-border-color: #007bff; /* Đổi màu viền khi focus */
+    -fx-background-color: #ffffff;
+}
+
+.button {
+    -fx-background-color: #007bff; /* Màu xanh */
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 15px;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Màu xanh đậm khi hover */
+}
+
+.button:pressed {
+    -fx-background-color: #004494; /* Màu xanh đậm hơn khi nhấn */
+}
+
+
+/*
+.dialog-pane .header-panel {
+    -fx-padding: 10px;
+    -fx-border-radius: 10px 10px 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white; 
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+} 
+*/

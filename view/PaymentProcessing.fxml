@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentProcessingController">
+   <children>
+      <VBox alignment="CENTER" scaleShape="false" spacing="10.0" style="-fx-padding: 20;">
+         <children>
+            <Label text="Xử lý thanh toán">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderDetailsLabel" maxWidth="450.0" text="Thông tin đơn hàng" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" maxWidth="450.0" text="Nhập địa chỉ nhận hàng" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressField" maxWidth="450.0" prefHeight="43.0" prefWidth="390.0" promptText="Nhập địa chỉ giao hàng" visible="false" />
+            <Label fx:id="savedAddressLabel" maxWidth="450.0" text="Địa chỉ đã lưu" visible="false" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="editAddressButton" onAction="#editAddress" prefHeight="35.0" prefWidth="120.0" text="Sửa địa chỉ" visible="false" />
+            <Label fx:id="firstOrderLabel" maxWidth="450.0" text="Nhập địa chỉ nhận hàng" visible="false" wrapText="true">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="confirmButton" defaultButton="true" onAction="#confirmPayment" prefHeight="35.0" prefWidth="150.0" text="Xác nhận" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="470.0" prefWidth="400" style="-fx-background-color: #CCFFFF;" stylesheets="@../assets/css/login-register.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.registerController">
+
+    <VBox alignment="CENTER" layoutX="39.0" prefHeight="490.0" prefWidth="322.0" spacing="10">
+        <Label style="-fx-font-size: 20px; -fx-text-fill: #3399CC; -fx-font-weight: bold;" text="ĐĂNG KÝ" />
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="322.0" spacing="50.0">
+         <children>
+            <Label text="Vai trò :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+               <CheckBox fx:id="userCheck" text="User" />
+               <CheckBox fx:id="adminCheck" lineSpacing="50.0" text="Admin" textAlignment="CENTER" />
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="333.0">
+         <children>
+      
+              <TextField fx:id="txtEmail" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="298.0" promptText="Email" styleClass="input" />
+         </children>
+      </HBox>
+      <HBox fx:id="error_email" alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="322.0">
+         <children>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Bạn cần nhập đúng email " />
+         </children>
+      </HBox>
+         <HBox alignment="CENTER" spacing="5">
+            <PasswordField fx:id="txtPassword" prefHeight="35.0" prefWidth="298.0" promptText="Mật khẩu" styleClass="input" />
+            <TextField fx:id="txtPasswordVisible" managed="false" prefHeight="35.0" prefWidth="396.0" promptText="Mật khẩu" styleClass="input" visible="false" />
+            <ImageView fx:id="eyeIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/visible.png" />
+               </image>
+            </ImageView>
+         </HBox>
+      <HBox fx:id="error_password" alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="322.0">
+         <children>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="* Mật khẩu không phù hợp" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="345.0">
+         <children>
+              <PasswordField fx:id="txtConfirmPassword" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="298.0" promptText="Xác nhận mật khẩu" styleClass="input" />
+         </children>
+      </HBox>
+      <HBox fx:id="error_confirm_password" alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="322.0">
+         <children>
+            <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="* Mật khẩu không trùng khớp" />
+         </children>
+      </HBox>
+
+        <Button fx:id="btnRegister" defaultButton="true" styleClass="registerBtn" text="ĐĂNG KÝ" />
+        
+        <Hyperlink fx:id="toggleToLogin" styleClass="redirect" text="Đã có tài khoản? Đăng nhập ngay" />
+
+    </VBox>
+
+</AnchorPane>

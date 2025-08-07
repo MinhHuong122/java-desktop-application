@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportController">
+   <children>
+      <VBox layoutX="287.0" layoutY="93.0" prefHeight="714.0" prefWidth="1096.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="718.0" prefWidth="1096.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="725.0" prefWidth="528.0">
+                     <children>
+                        <Label text="Sản phẩm bán chạy nhất ">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="topProductsList" prefHeight="633.0" prefWidth="498.0" style="-fx-border-style: solid;" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="30.0" layoutY="10.0" prefHeight="514.0" prefWidth="589.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="363.0" fitWidth="362.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/img/45216fe580c58958f0c04be9170b7d5b.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="totalProductsLabel" prefHeight="47.0" prefWidth="419.0" text="Tổng sản phẩm được bán: ">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalCustomersLabel" layoutX="203.0" layoutY="336.0" prefHeight="47.0" prefWidth="296.0" text="Tổng khách hàng: ">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

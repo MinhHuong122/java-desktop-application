@@ -1,0 +1,21 @@
+.btn-button {
+    -fx-background-radius: 100px;
+    -fx-background-color:  #95E073;
+    -fx-font-style:normal white;
+}
+.show-sp {
+    -fx-border-style:solid;
+    -fx-background-radius:20%;
+    -fx-background-color:#FFFFFF;
+    -fx-border-radius:20%;
+
+}
+.show-catalogue 
+{
+    -fx-background-radius: 100%;
+    -fx-border-style : solid;
+    -fx-border-color:  #D9CFAC;
+    -fx-border-width:3px;
+    -fx-border-radius: 100%;
+    -fx-background-color:#FFFFFF;
+}

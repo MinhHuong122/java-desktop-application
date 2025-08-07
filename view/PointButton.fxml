@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PointController">
+   <children>
+      <VBox layoutX="31.0" layoutY="47.0" prefHeight="713.0" prefWidth="1101.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="523.0" prefWidth="1102.0" style="-fx-background-color: #F8F8FF;">
+               <children>
+                  <VBox prefHeight="512.0" prefWidth="522.0" style="-fx-background-color: #E8E8E8;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="71.0" prefWidth="522.0">
+                           <children>
+                              <Label text="Xếp hạng thành viên">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="306.0" prefWidth="522.0">
+                           <children>
+                              <ImageView fx:id="rankImageView" fitHeight="238.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/img/game-badge.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="pointsLabel" text="Điểm hiện có : 00 ">
+                                 <font>
+                                    <Font name="Cambria Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="1102.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="289.0">
+                     <children>
+                        <Label text="Đổi thưởng : ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="135.0" prefWidth="1102.0">
+               <children>
+                  <VBox prefHeight="135.0" prefWidth="1104.0">
+                     <children>
+                        <HBox prefHeight="35.0" prefWidth="1102.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="935.0" style="-fx-border-style: solid; -fx-background-color: #FFFFF0;" text="Voucher Shoppe - giảm 20% đơn trên 100k">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="redeemButton1" mnemonicParsing="false" onAction="#handleRedeem" prefHeight="33.0" prefWidth="170.0" style="-fx-background-radius: 30px; -fx-border-width: 3px; -fx-border-radius: 30px; -fx-border-style: solid; -fx-border-color: #FFFFFF; -fx-background-color: #008080;" text="1000" textFill="#fffcfc">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="1102.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="935.0" style="-fx-border-style: solid; -fx-background-color: #FFFFF0;" text="Voucher XanhSM - giảm 20% khi đi xe máy">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="redeemButton2" mnemonicParsing="false" onAction="#handleRedeem" prefHeight="33.0" prefWidth="170.0" style="-fx-background-radius: 30px; -fx-border-width: 3px; -fx-border-radius: 30px; -fx-border-style: solid; -fx-border-color: #FFFFFF; -fx-background-color: #008080;" text="2000" textFill="#fffcfc">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="83.0" prefHeight="35.0" prefWidth="1102.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="935.0" style="-fx-border-style: solid; -fx-background-color: #FFFFF0;" text="Voucher Bee - giảm 10% cho BeCar">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="redeemButton3" mnemonicParsing="false" onAction="#handleRedeem" prefHeight="33.0" prefWidth="170.0" style="-fx-background-radius: 30px; -fx-border-width: 3px; -fx-border-radius: 30px; -fx-border-style: solid; -fx-border-color: #FFFFFF; -fx-background-color: #008080;" text="1500" textFill="#fffcfc">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="85.0" prefHeight="35.0" prefWidth="1102.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="935.0" style="-fx-border-style: solid; -fx-background-color: #FFFFF0;" text="Voucher Dooki Dooki - giảm 30% trên 1 vé ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="redeemButton4" mnemonicParsing="false" onAction="#handleRedeem" prefHeight="33.0" prefWidth="170.0" style="-fx-background-radius: 30px; -fx-border-width: 3px; -fx-border-radius: 30px; -fx-border-style: solid; -fx-border-color: #FFFFFF; -fx-background-color: #008080;" text="3000" textFill="#fffcfc">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+/* Định dạng hàng sản phẩm */
+.product-row {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 15;
+    -fx-spacing: 40;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 2, 2);
+    -fx-pref-width: 1080px; /* Kéo dài hàng sản phẩm */
+}
+
+/* Font chữ lớn hơn cho CheckBox */
+.check-box {
+    -fx-font-size: 20px; /* Tăng kích thước chữ */
+    -fx-text-fill: #333333;
+}
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: #666666;
+    -fx-border-radius: 3;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #0078d7;
+}
+/* Font chữ lớn hơn cho Spinner */
+.spinner {
+    -fx-pref-width: 150px;
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3;
+}
+
+.spinner .text-field {
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+
+/* Style cho Button "Xóa" */
+.delete-button {
+    -fx-background-color: #ff4444;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 25px;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.delete-button:hover {
+    -fx-background-color: #cc0000;
+}
+
+#productListVBox {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+}
+

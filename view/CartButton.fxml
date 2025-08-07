@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1101.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../assets/css/CartButton.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartController">
+   <children>
+      <VBox layoutX="211.0" layoutY="151.0" prefHeight="713.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <!-- Header -->
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="1102.0" spacing="10.0" style="-fx-background-color: #F8F8FF;">
+               <children>
+                  <Label text="Giỏ hàng">
+                     <font>
+                        <Font name="Cambria Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/grocery-store.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+
+            <!-- Danh sách sản phẩm -->
+            <ScrollPane prefHeight="582.0" prefWidth="1102.0" style="-fx-border-style: solid;">
+               <content>
+                  <VBox fx:id="productListVBox" spacing="10">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+
+            <!-- Khu vực thanh toán -->
+            <HBox alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="1102.0">
+               <children>
+                  <VBox prefHeight="75.0" prefWidth="923.0">
+                     <children>
+                        <!-- Hiển thị tổng tiền -->
+                        <Label fx:id="totalLabel" prefHeight="35.0" prefWidth="928.0" text="Tổng tiền: 0 VNĐ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+      
+                        <!-- Chọn phương thức thanh toán -->
+                        <HBox spacing="10">
+                           <Label text="Phương thức thanh toán:">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <ComboBox fx:id="paymentMethodCombo" prefHeight="26.0" prefWidth="200.0" />
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="70.0" prefWidth="159.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="selectAllButton" onAction="#toggleSelectAll" text="Chọn tất cả" />
+            
+                                                <!-- Nút đặt hàng -->
+                        <Button fx:id="placeOrderButton" mnemonicParsing="false" onAction="#placeOrder" prefHeight="32.0" prefWidth="146.0" text="Đặt hàng" />
+                     </children>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
