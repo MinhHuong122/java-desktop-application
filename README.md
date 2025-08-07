@@ -43,25 +43,13 @@
 -   **📊 Thống kê & Báo cáo:** Tạo các báo cáo trực quan về tình hình kinh doanh, sản phẩm bán chạy.
 
 -   **🔐 Đăng nhập & Phân quyền:** Hệ thống đăng nhập an toàn, phân quyền chức năng cho quản lý và nhân viên.
-
-
-
+-   
 ## 🚀 Tải Về \& Cài Đặt Nhanh
-
-
-
 Bạn có thể trải nghiệm ứng dụng ngay lập tức bằng cách tải về file cài đặt cho Windows dưới đây.
-
-
-
 <p align="center">
-
 &nbsp; <a href="https://github.com/MinhHuong122/java-desktop-application/releases/download/v1.0/TotoroShopSetup.exe" style="text-decoration:none;">
-
 &nbsp;   <img src="https://img.shields.io/badge/Tải Về Ngay (.exe)-4CAF50?style=for-the-badge\&logo=windows\&logoColor=white" alt="Download .exe">
-
 &nbsp; </a>
-
 </p>
 
 
